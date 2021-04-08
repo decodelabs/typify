@@ -27,7 +27,7 @@ class Generator
     public function export(): void
     {
         $interface = $this->exportInterface();
-        file_put_contents(__DIR__.'/Source.php', $interface);
+        file_put_contents(__DIR__ . '/Source.php', $interface);
     }
 
     /**
@@ -52,7 +52,7 @@ interface Source
     public const TYPES =
 PHP;
 
-        $output .= ' '.str_replace("\n", "\n    ", $this->exportTypesArray()).';'."\n".'}'."\n";
+        $output .= ' ' . str_replace("\n", "\n    ", $this->exportTypesArray()) . ';' . "\n" . '}' . "\n";
         return $output;
     }
 
