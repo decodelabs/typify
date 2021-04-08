@@ -20,7 +20,40 @@ composer require decodelabs/typify
 
 ## Usage
 
-...coming soon...
+### Importing
+
+Typify uses [Veneer](https://github.com/decodelabs/veneer) to provide a unified frontage under <code>DecodeLabs\Typify</code>.
+You can access all the primary functionality via this static frontage without compromising testing and dependency injection.
+
+
+### Detecting types
+
+Detect a mime type for a file path:
+
+```php
+use DecodeLabs\Typify;
+
+echo Typify::detect(__FILE__);
+// application/x-php
+```
+
+Get known extensions for a type:
+
+```php
+use DecodeLabs\Typify;
+
+$exts = Typify::getExtensionsFor('text/plain');
+// txt, text, conf, def, list, log, in
+```
+
+Suggest an extension for a mime type:
+
+```php
+use DecodeLabs\Typify;
+
+echo Typify::getExtensionFor('text/plain');
+// txt
+```
 
 
 ### PHP version
