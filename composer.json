@@ -11,6 +11,7 @@
     "require": {
         "php": "^7.2|^8.0",
 
+        "decodelabs/veneer": "^0.7",
         "decodelabs/exceptional": "^0.3"
     },
     "require-dev": {
@@ -22,8 +23,11 @@
     },
     "autoload": {
         "psr-4": {
-            "DecodeLabs\\Typify\\": "src/"
-        }
+            "DecodeLabs\\Typify\\": "src/Typify"
+        },
+        "files": [
+            "src/global.php"
+        ]
     },
     "extra": {
         "branch-alias": {
