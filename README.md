@@ -1,13 +1,11 @@
 # Typify
 
-<!--
 [![PHP from Packagist](https://img.shields.io/packagist/php-v/decodelabs/typify?style=flat-square)](https://packagist.org/packages/decodelabs/typify)
 [![Latest Version](https://img.shields.io/packagist/v/decodelabs/typify.svg?style=flat-square)](https://packagist.org/packages/decodelabs/typify)
 [![Total Downloads](https://img.shields.io/packagist/dt/decodelabs/typify.svg?style=flat-square)](https://packagist.org/packages/decodelabs/typify)
 [![Build Status](https://img.shields.io/travis/com/decodelabs/typify/main.svg?style=flat-square)](https://travis-ci.com/decodelabs/typify)
 [![PHPStan](https://img.shields.io/badge/PHPStan-enabled-44CC11.svg?longCache=true&style=flat-square)](https://github.com/phpstan/phpstan)
 [![License](https://img.shields.io/packagist/l/decodelabs/typify?style=flat-square)](https://packagist.org/packages/decodelabs/typify)
--->
 
 Mime type detection tools for PHP.
 
@@ -20,7 +18,40 @@ composer require decodelabs/typify
 
 ## Usage
 
-...coming soon...
+### Importing
+
+Typify uses [Veneer](https://github.com/decodelabs/veneer) to provide a unified frontage under <code>DecodeLabs\Typify</code>.
+You can access all the primary functionality via this static frontage without compromising testing and dependency injection.
+
+
+### Detecting types
+
+Detect a mime type for a file path:
+
+```php
+use DecodeLabs\Typify;
+
+echo Typify::detect(__FILE__);
+// application/x-php
+```
+
+Get known extensions for a type:
+
+```php
+use DecodeLabs\Typify;
+
+$exts = Typify::getExtensionsFor('text/plain');
+// txt, text, conf, def, list, log, in
+```
+
+Suggest an extension for a mime type:
+
+```php
+use DecodeLabs\Typify;
+
+echo Typify::getExtensionFor('text/plain');
+// txt
+```
 
 
 ### PHP version
