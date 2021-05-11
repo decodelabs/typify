@@ -19,7 +19,10 @@
         "phpstan/phpstan": "^0.12.45",
         "phpstan/extension-installer": "^1.0",
         "decodelabs/phpstan-decodelabs": "^0.4",
-        "symplify/easy-coding-standard": "^8.3"
+        "symplify/easy-coding-standard": "^8.3",
+
+        "decodelabs/atlas": "^0.9",
+        "decodelabs/terminus": "^0.7"
     },
     "autoload": {
         "psr-4": {
