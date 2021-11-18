@@ -3,7 +3,7 @@
 [![PHP from Packagist](https://img.shields.io/packagist/php-v/decodelabs/typify?style=flat-square)](https://packagist.org/packages/decodelabs/typify)
 [![Latest Version](https://img.shields.io/packagist/v/decodelabs/typify.svg?style=flat-square)](https://packagist.org/packages/decodelabs/typify)
 [![Total Downloads](https://img.shields.io/packagist/dt/decodelabs/typify.svg?style=flat-square)](https://packagist.org/packages/decodelabs/typify)
-[![Build Status](https://img.shields.io/travis/com/decodelabs/typify/main.svg?style=flat-square)](https://travis-ci.com/decodelabs/typify)
+[![Build Status](https://img.shields.io/travis/com/decodelabs/typify/main.svg?style=flat-square)](https://app.travis-ci.com/github/decodelabs/typify)
 [![PHPStan](https://img.shields.io/badge/PHPStan-enabled-44CC11.svg?longCache=true&style=flat-square)](https://github.com/phpstan/phpstan)
 [![License](https://img.shields.io/packagist/l/decodelabs/typify?style=flat-square)](https://packagist.org/packages/decodelabs/typify)
 
