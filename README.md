@@ -1,11 +1,11 @@
 # Typify
 
-[![PHP from Packagist](https://img.shields.io/packagist/php-v/decodelabs/typify?style=flat-square)](https://packagist.org/packages/decodelabs/typify)
-[![Latest Version](https://img.shields.io/packagist/v/decodelabs/typify.svg?style=flat-square)](https://packagist.org/packages/decodelabs/typify)
-[![Total Downloads](https://img.shields.io/packagist/dt/decodelabs/typify.svg?style=flat-square)](https://packagist.org/packages/decodelabs/typify)
+[![PHP from Packagist](https://img.shields.io/packagist/php-v/decodelabs/typify?style=flat)](https://packagist.org/packages/decodelabs/typify)
+[![Latest Version](https://img.shields.io/packagist/v/decodelabs/typify.svg?style=flat)](https://packagist.org/packages/decodelabs/typify)
+[![Total Downloads](https://img.shields.io/packagist/dt/decodelabs/typify.svg?style=flat)](https://packagist.org/packages/decodelabs/typify)
 [![GitHub Workflow Status](https://img.shields.io/github/workflow/status/decodelabs/typify/PHP%20Composer)](https://github.com/decodelabs/typify/actions/workflows/php.yml)
-[![PHPStan](https://img.shields.io/badge/PHPStan-enabled-44CC11.svg?longCache=true&style=flat-square)](https://github.com/phpstan/phpstan)
-[![License](https://img.shields.io/packagist/l/decodelabs/typify?style=flat-square)](https://packagist.org/packages/decodelabs/typify)
+[![PHPStan](https://img.shields.io/badge/PHPStan-enabled-44CC11.svg?longCache=true&style=flat)](https://github.com/phpstan/phpstan)
+[![License](https://img.shields.io/packagist/l/decodelabs/typify?style=flat)](https://packagist.org/packages/decodelabs/typify)
 
 Mime type detection tools for PHP.
 
