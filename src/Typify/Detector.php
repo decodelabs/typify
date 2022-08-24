@@ -13,10 +13,7 @@ use DecodeLabs\Typify\Catalogue\Apache as ApacheCatalogue;
 
 class Detector
 {
-    /**
-     * @var Catalogue
-     */
-    protected $catalogue;
+    protected Catalogue $catalogue;
 
     /**
      * Init with catalogue
@@ -34,8 +31,10 @@ class Detector
     /**
      * Detect mime type from path
      */
-    public function detect(string $path, string $default = 'application/octet-stream'): string
-    {
+    public function detect(
+        string $path,
+        string $default = 'application/octet-stream'
+    ): string {
         if (preg_match('#[^a-zA-Z0-9]#', $path)) {
             $extension = pathinfo($path, \PATHINFO_EXTENSION);
         } else {
@@ -50,8 +49,10 @@ class Detector
     /**
      * Get type for extension
      */
-    public function getTypeFor(string $extension, ?string $default = null): ?string
-    {
+    public function getTypeFor(
+        string $extension,
+        ?string $default = null
+    ): ?string {
         if (empty($extension)) {
             return $default;
         }
