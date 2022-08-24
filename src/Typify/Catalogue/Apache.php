@@ -12,7 +12,9 @@ namespace DecodeLabs\Typify\Catalogue;
 use DecodeLabs\Typify\Catalogue;
 use DecodeLabs\Typify\Catalogue\Apache\Source;
 
-class Apache implements Catalogue, Source
+class Apache implements
+    Catalogue,
+    Source
 {
     /**
      * Lookup mime type for extension
