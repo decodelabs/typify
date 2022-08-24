@@ -7,6 +7,6 @@ namespace DecodeLabs;
 use DecodeLabs\Veneer\Proxy;
 use DecodeLabs\Veneer\ProxyTrait;
 use DecodeLabs\Typify\Detector as Inst;
-class Typify implements Proxy { use ProxyTrait; 
+class Typify implements Proxy { use ProxyTrait;
 const VENEER = 'Typify';
 const VENEER_TARGET = Inst::class;};
