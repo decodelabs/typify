@@ -11,7 +11,7 @@
     "require": {
         "php": "^8.0",
 
-        "decodelabs/veneer": "^0.9",
+        "decodelabs/veneer": "^0.10",
         "decodelabs/exceptional": "^0.4"
     },
     "require-dev": {
