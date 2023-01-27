@@ -5,15 +5,15 @@
  */
 namespace DecodeLabs;
 
-use DecodeLabs\Veneer\Proxy;
-use DecodeLabs\Veneer\ProxyTrait;
+use DecodeLabs\Veneer\Proxy as Proxy;
+use DecodeLabs\Veneer\ProxyTrait as ProxyTrait;
 use DecodeLabs\Typify\Detector as Inst;
 
 class Typify implements Proxy
 {
     use ProxyTrait;
 
-    const VENEER = 'DecodeLabs\Typify';
+    const VENEER = 'DecodeLabs\\Typify';
     const VENEER_TARGET = Inst::class;
 
     public static Inst $instance;
