@@ -12,18 +12,10 @@
         "php": "^8.0",
 
         "decodelabs/exceptional": "^0.4",
-        "decodelabs/veneer": "^0.10.7"
+        "decodelabs/veneer": "^0.10.10"
     },
     "require-dev": {
-        "phpunit/phpunit": "^9",
-        "phpstan/phpstan": "^1",
-        "phpstan/extension-installer": "^1.0",
-        "php-parallel-lint/php-parallel-lint": "^1.3",
-        "symplify/easy-coding-standard": "^11",
-
-        "decodelabs/phpstan-decodelabs": "^0.6",
-        "decodelabs/atlas": "^0.10.4",
-        "decodelabs/terminus": "^0.8.4"
+        "decodelabs/phpstan-decodelabs": "^0.6"
     },
     "autoload": {
         "psr-4": {
@@ -37,31 +29,5 @@
         "branch-alias": {
             "dev-develop": "0.2.x-dev"
         }
-    },
-    "config": {
-        "allow-plugins": {
-            "phpstan/extension-installer": true
-        }
-    },
-    "scripts": {
-        "analyze": "phpstan analyze --no-progress",
-        "clear-phpstan": "phpstan clear-result-cache",
-        "ecs": "ecs check --no-progress-bar",
-        "ecs-fix": "ecs check --no-progress-bar --fix",
-        "lint": "parallel-lint src/ stubs/ ecs.php",
-        "eclint": "eclint check src/ stubs/ ecs.php",
-        "eclint-fix": "eclint fix src/ stubs/ ecs.php",
-        "non-ascii": "! LC_ALL=C.UTF-8 find src/ -type f -name \"*.php\" -print0 | xargs -0 -- grep -PHn \"[^ -~]\" | grep -v '// @ignore-non-ascii$'",
-        "veneer-stub": "vendor/bin/veneer-stub",
-        "check": [
-            "@composer update",
-            "@veneer-stub",
-            "@clear-phpstan",
-            "@analyze",
-            "@ecs-fix",
-            "@lint",
-            "@eclint",
-            "@non-ascii"
-        ]
     }
 }
