@@ -1,3 +1,5 @@
+* Refactored package file structure
+
 ## v0.2.4 (2023-09-26)
 * Migrated to use effigy in CI workflow
 * Fixed PHP8.1 testing

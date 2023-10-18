@@ -2,12 +2,12 @@
     "name": "decodelabs/typify",
     "description": "Mime type detection tools",
     "type": "library",
-    "keywords": ["mime", "content", "detection"],
+    "keywords": [ "mime", "content", "detection" ],
     "license": "MIT",
-    "authors": [{
-        "name": "Tom Wright",
-        "email": "tom@inflatablecookie.com"
-    }],
+    "authors": [ {
+            "name": "Tom Wright",
+            "email": "tom@inflatablecookie.com"
+        } ],
     "require": {
         "php": "^8.0",
 
@@ -19,10 +19,10 @@
     },
     "autoload": {
         "psr-4": {
-            "DecodeLabs\\Typify\\": "src/Typify"
+            "DecodeLabs\\Typify\\": "src/"
         },
         "files": [
-            "src/global.php"
+            "src/Detector.php"
         ]
     },
     "extra": {

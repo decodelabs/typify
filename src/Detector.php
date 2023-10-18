@@ -9,7 +9,9 @@ declare(strict_types=1);
 
 namespace DecodeLabs\Typify;
 
+use DecodeLabs\Typify;
 use DecodeLabs\Typify\Catalogue\Apache as ApacheCatalogue;
+use DecodeLabs\Veneer;
 
 class Detector
 {
@@ -84,3 +86,7 @@ class Detector
         return $this->catalogue->getExtensionsFor($type);
     }
 }
+
+
+// Register the Veneer proxy
+Veneer::register(Detector::class, Typify::class);
