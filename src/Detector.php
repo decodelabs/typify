@@ -20,8 +20,9 @@ class Detector
     /**
      * Init with catalogue
      */
-    public function __construct(?Catalogue $catalogue = null)
-    {
+    public function __construct(
+        ?Catalogue $catalogue = null
+    ) {
         if ($catalogue === null) {
             $catalogue = new ApacheCatalogue();
         }
@@ -71,8 +72,9 @@ class Detector
     /**
      * Suggest extension for type
      */
-    public function getExtensionFor(string $type): ?string
-    {
+    public function getExtensionFor(
+        string $type
+    ): ?string {
         return $this->catalogue->getExtensionFor($type);
     }
 
@@ -81,8 +83,9 @@ class Detector
      *
      * @return array<string>
      */
-    public function getExtensionsFor(string $type): array
-    {
+    public function getExtensionsFor(
+        string $type
+    ): array {
         return $this->catalogue->getExtensionsFor($type);
     }
 }

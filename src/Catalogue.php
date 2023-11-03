@@ -11,11 +11,19 @@ namespace DecodeLabs\Typify;
 
 interface Catalogue
 {
-    public function getTypeFor(string $extension): ?string;
-    public function getExtensionFor(string $type): ?string;
+    public function getTypeFor(
+        string $extension
+    ): ?string;
+
+    public function getExtensionFor(
+        string $type
+    ): ?string;
+
 
     /**
      * @return array<string>
      */
-    public function getExtensionsFor(string $type): array;
+    public function getExtensionsFor(
+        string $type
+    ): array;
 }

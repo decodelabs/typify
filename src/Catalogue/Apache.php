@@ -19,16 +19,18 @@ class Apache implements
     /**
      * Lookup mime type for extension
      */
-    public function getTypeFor(string $extension): ?string
-    {
+    public function getTypeFor(
+        string $extension
+    ): ?string {
         return self::TYPES[$extension] ?? null;
     }
 
     /**
      * Lookup first extension for mime type
      */
-    public function getExtensionFor(string $type): ?string
-    {
+    public function getExtensionFor(
+        string $type
+    ): ?string {
         foreach (self::TYPES as $ext => $testType) {
             if ($type === $testType) {
                 return (string)$ext;
@@ -41,8 +43,9 @@ class Apache implements
     /**
      * Look up all extensions for mime type
      */
-    public function getExtensionsFor(string $type): array
-    {
+    public function getExtensionsFor(
+        string $type
+    ): array {
         $output = [];
 
         foreach (self::TYPES as $ext => $testType) {
