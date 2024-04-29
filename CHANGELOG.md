@@ -1,5 +1,7 @@
+## v0.2.5 (2024-04-29)
 * Made PHP8.1 minimum version
 * Refactored package file structure
+* Fixed Veneer stubs in gitattributes
 
 ## v0.2.4 (2023-09-26)
 * Migrated to use effigy in CI workflow
