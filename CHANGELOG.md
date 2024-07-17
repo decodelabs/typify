@@ -1,3 +1,5 @@
+* Updated Veneer dependency
+
 ## v0.2.5 (2024-04-29)
 * Made PHP8.1 minimum version
 * Refactored package file structure
