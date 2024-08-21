@@ -13,8 +13,8 @@ class Typify implements Proxy
 {
     use ProxyTrait;
 
-    const VENEER = 'DecodeLabs\\Typify';
-    const VENEER_TARGET = Inst::class;
+    const Veneer = 'DecodeLabs\\Typify';
+    const VeneerTarget = Inst::class;
 
     public static Inst $instance;
 
