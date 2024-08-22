@@ -22,7 +22,7 @@ class Apache implements
     public function getTypeFor(
         string $extension
     ): ?string {
-        return self::TYPES[$extension] ?? null;
+        return self::Types[$extension] ?? null;
     }
 
     /**
@@ -31,7 +31,7 @@ class Apache implements
     public function getExtensionFor(
         string $type
     ): ?string {
-        foreach (self::TYPES as $ext => $testType) {
+        foreach (self::Types as $ext => $testType) {
             if ($type === $testType) {
                 return (string)$ext;
             }
@@ -48,7 +48,7 @@ class Apache implements
     ): array {
         $output = [];
 
-        foreach (self::TYPES as $ext => $testType) {
+        foreach (self::Types as $ext => $testType) {
             if ($type === $testType) {
                 $output[] = (string)$ext;
             }
