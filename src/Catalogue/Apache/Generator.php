@@ -13,9 +13,9 @@ use DecodeLabs\Exceptional;
 
 class Generator
 {
-    public const MIME_LIST = 'http://svn.apache.org/repos/asf/httpd/httpd/trunk/docs/conf/mime.types';
+    protected const MimeList = 'http://svn.apache.org/repos/asf/httpd/httpd/trunk/docs/conf/mime.types';
 
-    public const EXTRA_TYPES = [
+    protected const ExtraTypes = [
         'php' => 'application/x-php',
         'sass' => 'text/x-sass',
         'scss' => 'text/x-scss'
@@ -49,7 +49,7 @@ namespace DecodeLabs\Typify\Catalogue\Apache;
 
 interface Source
 {
-    public const TYPES =
+    public const Types =
 PHP;
 
         $output .= ' ' . str_replace("\n", "\n    ", $this->exportTypesArray()) . ';' . "\n" . '}' . "\n";
@@ -61,7 +61,7 @@ PHP;
      */
     public function exportTypesArray(): string
     {
-        if (!$data = file_get_contents(self::MIME_LIST)) {
+        if (!$data = file_get_contents(self::MimeList)) {
             throw Exceptional::Runtime(
                 'Unable to fetch Apache mime list'
             );
@@ -93,7 +93,7 @@ PHP;
             }
         }
 
-        foreach (self::EXTRA_TYPES as $key => $value) {
+        foreach (self::ExtraTypes as $key => $value) {
             $output[$key] = '    \'' . $key . '\' => \'' . $value . '\'';
         }
 

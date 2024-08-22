@@ -11,7 +11,7 @@ namespace DecodeLabs\Typify\Catalogue\Apache;
 
 interface Source
 {
-    public const TYPES = [
+    public const Types = [
         'ez' => 'application/andrew-inset',
         'aw' => 'application/applixware',
         'atom' => 'application/atom+xml',
