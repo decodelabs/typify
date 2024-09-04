@@ -76,7 +76,6 @@ PHP;
 
             if (
                 !preg_match_all('#([^\s]+)#', $line, $matches) ||
-                !isset($matches[1]) ||
                 (($count = count($matches[1])) <= 1)
             ) {
                 continue;
