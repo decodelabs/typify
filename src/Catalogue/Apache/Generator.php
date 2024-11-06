@@ -16,9 +16,10 @@ class Generator
     protected const MimeList = 'http://svn.apache.org/repos/asf/httpd/httpd/trunk/docs/conf/mime.types';
 
     protected const ExtraTypes = [
+        'heic' => 'image/heic',
         'php' => 'application/x-php',
         'sass' => 'text/x-sass',
-        'scss' => 'text/x-scss'
+        'scss' => 'text/x-scss',
     ];
 
     /**
@@ -76,7 +77,6 @@ PHP;
 
             if (
                 !preg_match_all('#([^\s]+)#', $line, $matches) ||
-                !isset($matches[1]) ||
                 (($count = count($matches[1])) <= 1)
             ) {
                 continue;

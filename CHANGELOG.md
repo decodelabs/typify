@@ -1,3 +1,6 @@
+## v0.3.1 (2024-11-06)
+* Updated source list
+
 ## v0.3.0 (2024-08-21)
 * Converted consts to PascalCase
 * Updated Veneer dependency and Stub
