@@ -1,3 +1,5 @@
+* Added PHP8.4 to CI workflow
+
 ## v0.3.1 (2024-11-06)
 * Updated source list
 
