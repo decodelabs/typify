@@ -9,13 +9,13 @@
             "email": "tom@inflatablecookie.com"
         } ],
     "require": {
-        "php": "^8.1",
+        "php": "^8.4",
 
-        "decodelabs/exceptional": "^0.4",
-        "decodelabs/veneer": "^0.11.6"
+        "decodelabs/exceptional": "^0.5",
+        "decodelabs/veneer": "^0.12.1"
     },
     "require-dev": {
-        "decodelabs/phpstan-decodelabs": "^0.6",
+        "decodelabs/phpstan-decodelabs": "^0.7",
         "decodelabs/clip": "^0.3.15"
     },
     "autoload": {

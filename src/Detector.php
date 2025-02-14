@@ -92,4 +92,7 @@ class Detector
 
 
 // Register the Veneer proxy
-Veneer::register(Detector::class, Typify::class);
+Veneer\Manager::getGlobalManager()->register(
+    Detector::class,
+    Typify::class
+);
