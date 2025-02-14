@@ -64,14 +64,17 @@ PHP;
     {
         if (!$data = file_get_contents(self::MimeList)) {
             throw Exceptional::Runtime(
-                'Unable to fetch Apache mime list'
+                message: 'Unable to fetch Apache mime list'
             );
         }
 
         $output = [];
 
         foreach (explode("\n", $data) as $line) {
-            if (!isset($line[0]) || $line[0] === '#') {
+            if (
+                !isset($line[0]) ||
+                $line[0] === '#'
+            ) {
                 continue;
             }
 
