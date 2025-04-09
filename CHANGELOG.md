@@ -1,3 +1,6 @@
+## v0.3.3 (2025-04-09)
+* Upgraded Clip dependency
+
 ## v0.3.2 (2025-02-14)
 * Upgraded PHPStan to v2
 * Tidied boolean logic
