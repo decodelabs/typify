@@ -16,7 +16,7 @@
     },
     "require-dev": {
         "decodelabs/phpstan-decodelabs": "^0.7",
-        "decodelabs/clip": "^0.3.15"
+        "decodelabs/clip": "^0.4"
     },
     "autoload": {
         "psr-4": {
