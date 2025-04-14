@@ -11,8 +11,6 @@
 
 Use typify to identify and apply mime types information to your files and responses.
 
-_Get news and updates on the [DecodeLabs blog](https://blog.decodelabs.com)._
-
 ---
 
 
