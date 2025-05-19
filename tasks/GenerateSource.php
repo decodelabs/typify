@@ -7,16 +7,18 @@
 
 declare(strict_types=1);
 
-namespace DecodeLabs\Clip\Task;
+namespace DecodeLabs\Commandment\Action;
 
-use DecodeLabs\Clip\Task;
-use DecodeLabs\Terminus as Cli;
+use DecodeLabs\Commandment\Action;
+use DecodeLabs\Commandment\Request;
+use DecodeLabs\Terminus\Session;
 use DecodeLabs\Typify\Catalogue\Apache\Generator;
 
-class GenerateSource implements Task
+class GenerateSource implements Action
 {
-    public function execute(): bool
-    {
+    public function execute(
+        Request $request,
+    ): bool {
         $generator = new Generator();
         $generator->export();
         return true;
