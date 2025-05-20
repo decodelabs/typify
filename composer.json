@@ -17,10 +17,11 @@
     "require-dev": {
         "decodelabs/phpstan-decodelabs": "^0.7",
         "decodelabs/clip": "^0.5",
-        "decodelabs/commandment": "^0.1.1"
+        "decodelabs/commandment": "^0.2"
     },
     "conflict": {
-        "decodelabs/clip": "<0.5"
+        "decodelabs/clip": "<0.5",
+        "decodelabs/commandment": "<0.2"
     },
     "autoload": {
         "psr-4": {
