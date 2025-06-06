@@ -11,13 +11,13 @@
     "require": {
         "php": "^8.4",
 
-        "decodelabs/exceptional": "^0.5",
-        "decodelabs/veneer": "^0.12.1"
+        "decodelabs/exceptional": "^0.6.1",
+        "decodelabs/veneer": "^0.12.8"
     },
     "require-dev": {
         "decodelabs/phpstan-decodelabs": "^0.7",
-        "decodelabs/clip": "^0.5",
-        "decodelabs/commandment": "^0.2"
+        "decodelabs/clip": "^0.5.5",
+        "decodelabs/commandment": "^0.2.2"
     },
     "conflict": {
         "decodelabs/clip": "<0.5",
