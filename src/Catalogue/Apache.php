@@ -16,18 +16,12 @@ class Apache implements
     Catalogue,
     Source
 {
-    /**
-     * Lookup mime type for extension
-     */
     public function getTypeFor(
         string $extension
     ): ?string {
         return self::Types[$extension] ?? null;
     }
 
-    /**
-     * Lookup first extension for mime type
-     */
     public function getExtensionFor(
         string $type
     ): ?string {
@@ -40,9 +34,6 @@ class Apache implements
         return null;
     }
 
-    /**
-     * Look up all extensions for mime type
-     */
     public function getExtensionsFor(
         string $type
     ): array {

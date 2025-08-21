@@ -22,18 +22,12 @@ class Generator
         'scss' => 'text/x-scss',
     ];
 
-    /**
-     * Export interface to file
-     */
     public function export(): void
     {
         $interface = $this->exportInterface();
         file_put_contents(__DIR__ . '/Source.php', $interface);
     }
 
-    /**
-     * Export Source interface definition
-     */
     public function exportInterface(): string
     {
         $output = <<<PHP

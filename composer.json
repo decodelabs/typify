@@ -11,17 +11,17 @@
     "require": {
         "php": "^8.4",
 
-        "decodelabs/exceptional": "^0.6.1",
-        "decodelabs/veneer": "^0.12.8"
+        "decodelabs/exceptional": "^0.6.3",
+        "decodelabs/kingdom": "^0.1.1"
     },
     "require-dev": {
         "decodelabs/phpstan-decodelabs": "^0.7",
-        "decodelabs/clip": "^0.5.5",
-        "decodelabs/commandment": "^0.2.2"
+        "decodelabs/clip": "^0.6",
+        "decodelabs/commandment": "^0.3"
     },
     "conflict": {
-        "decodelabs/clip": "<0.5",
-        "decodelabs/commandment": "<0.2"
+        "decodelabs/clip": "<0.6",
+        "decodelabs/commandment": "<0.3"
     },
     "autoload": {
         "psr-4": {

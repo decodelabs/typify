@@ -9,17 +9,16 @@ declare(strict_types=1);
 
 namespace DecodeLabs\Typify;
 
-use DecodeLabs\Typify;
+use DecodeLabs\Kingdom\Service;
+use DecodeLabs\Kingdom\ServiceTrait;
 use DecodeLabs\Typify\Catalogue\Apache as ApacheCatalogue;
-use DecodeLabs\Veneer;
 
-class Detector
+class Detector implements Service
 {
+    use ServiceTrait;
+
     protected Catalogue $catalogue;
 
-    /**
-     * Init with catalogue
-     */
     public function __construct(
         ?Catalogue $catalogue = null
     ) {
@@ -31,9 +30,6 @@ class Detector
     }
 
 
-    /**
-     * Detect mime type from path
-     */
     public function detect(
         string $path,
         string $default = 'application/octet-stream'
@@ -49,9 +45,6 @@ class Detector
     }
 
 
-    /**
-     * Get type for extension
-     */
     public function getTypeFor(
         string $extension,
         ?string $default = null
@@ -69,9 +62,6 @@ class Detector
         return $output;
     }
 
-    /**
-     * Suggest extension for type
-     */
     public function getExtensionFor(
         string $type
     ): ?string {
@@ -79,8 +69,6 @@ class Detector
     }
 
     /**
-     * Get list of extensions for type
-     *
      * @return array<string>
      */
     public function getExtensionsFor(
@@ -89,10 +77,3 @@ class Detector
         return $this->catalogue->getExtensionsFor($type);
     }
 }
-
-
-// Register the Veneer proxy
-Veneer\Manager::getGlobalManager()->register(
-    Detector::class,
-    Typify::class
-);
