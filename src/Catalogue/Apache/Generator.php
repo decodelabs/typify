@@ -51,9 +51,6 @@ PHP;
         return $output;
     }
 
-    /**
-     * Generate type list from Apache mimes file
-     */
     public function exportTypesArray(): string
     {
         if (!$data = file_get_contents(self::MimeList)) {
