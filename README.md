@@ -16,6 +16,10 @@ Use typify to identify and apply mime types information to your files and respon
 
 ## Installation
 
+This package requires PHP 8.4 or higher.
+
+Install via Composer:
+
 ```bash
 composer require decodelabs/typify
 ```
