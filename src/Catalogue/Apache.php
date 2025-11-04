@@ -1,8 +1,8 @@
 <?php
 
 /**
- * @package Typify
- * @license http://opensource.org/licenses/MIT
+ * Typify
+ * @license https://opensource.org/licenses/MIT
  */
 
 declare(strict_types=1);
