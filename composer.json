@@ -2,12 +2,18 @@
     "name": "decodelabs/typify",
     "description": "Mime type detection tools",
     "type": "library",
-    "keywords": [ "mime", "content", "detection" ],
+    "keywords": [
+        "mime",
+        "content",
+        "detection"
+    ],
     "license": "MIT",
-    "authors": [ {
+    "authors": [
+        {
             "name": "Tom Wright",
             "email": "tom@inflatablecookie.com"
-        } ],
+        }
+    ],
     "require": {
         "php": "^8.4",
 
@@ -15,9 +21,10 @@
         "decodelabs/kingdom": "^0.2"
     },
     "require-dev": {
-        "decodelabs/phpstan-decodelabs": "^0.7",
+        "decodelabs/chorus": "^0.1",
         "decodelabs/clip": "^0.6",
-        "decodelabs/commandment": "^0.3"
+        "decodelabs/commandment": "^0.3",
+        "decodelabs/phpstan-decodelabs": "^0.7"
     },
     "conflict": {
         "decodelabs/clip": "<0.6",
@@ -35,7 +42,6 @@
         "psr-4": {
             "DecodeLabs\\Commandment\\Action\\": "tasks/"
         }
-
     },
     "extra": {
         "branch-alias": {
